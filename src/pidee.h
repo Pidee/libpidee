@@ -69,14 +69,14 @@ pidee_feature pidee_feature_led_yellow = { "led.yellow", PIDEE_FEATURE_LED,    1
 /* Interupts */
 
 void pidee_button_interupt() { if ( pidee_feature_button.interupt_handler != NULL ) { pidee_feature_button.interupt_handler( pidee_feature_button ); } };
-void pidee_dip_1_interupt()  { if ( pidee_feature_dip_1.interupt_handler != NULL ) { pidee_feature_dip_1.interupt_handler( pidee_feature_dip_1 ); } };
-void pidee_dip_2_interupt()  { if ( pidee_feature_dip_2.interupt_handler != NULL ) { pidee_feature_dip_2.interupt_handler( pidee_feature_dip_2 ); }};
-void pidee_dip_3_interupt()  { if ( pidee_feature_dip_3.interupt_handler != NULL ) { pidee_feature_dip_3.interupt_handler( pidee_feature_dip_3 ); }};
-void pidee_dip_4_interupt()  { if ( pidee_feature_dip_4.interupt_handler != NULL ) { pidee_feature_dip_4.interupt_handler( pidee_feature_dip_4 ); }};
-void pidee_dip_5_interupt()  { if ( pidee_feature_dip_5.interupt_handler != NULL ) { pidee_feature_dip_5.interupt_handler( pidee_feature_dip_5 ); }};
-void pidee_dip_6_interupt()  { if ( pidee_feature_dip_6.interupt_handler != NULL ) { pidee_feature_dip_6.interupt_handler( pidee_feature_dip_6 ); }};
-void pidee_dip_7_interupt()  { if ( pidee_feature_dip_7.interupt_handler != NULL ) { pidee_feature_dip_7.interupt_handler( pidee_feature_dip_7 ); }};
-void pidee_dip_8_interupt()  { if ( pidee_feature_dip_8.interupt_handler != NULL ) { pidee_feature_dip_8.interupt_handler( pidee_feature_dip_8 ); }};
+void pidee_dip_1_interupt()  { if ( pidee_feature_dip_1.interupt_handler  != NULL ) { pidee_feature_dip_1.interupt_handler( pidee_feature_dip_1 ); } };
+void pidee_dip_2_interupt()  { if ( pidee_feature_dip_2.interupt_handler  != NULL ) { pidee_feature_dip_2.interupt_handler( pidee_feature_dip_2 ); }};
+void pidee_dip_3_interupt()  { if ( pidee_feature_dip_3.interupt_handler  != NULL ) { pidee_feature_dip_3.interupt_handler( pidee_feature_dip_3 ); }};
+void pidee_dip_4_interupt()  { if ( pidee_feature_dip_4.interupt_handler  != NULL ) { pidee_feature_dip_4.interupt_handler( pidee_feature_dip_4 ); }};
+void pidee_dip_5_interupt()  { if ( pidee_feature_dip_5.interupt_handler  != NULL ) { pidee_feature_dip_5.interupt_handler( pidee_feature_dip_5 ); }};
+void pidee_dip_6_interupt()  { if ( pidee_feature_dip_6.interupt_handler  != NULL ) { pidee_feature_dip_6.interupt_handler( pidee_feature_dip_6 ); }};
+void pidee_dip_7_interupt()  { if ( pidee_feature_dip_7.interupt_handler  != NULL ) { pidee_feature_dip_7.interupt_handler( pidee_feature_dip_7 ); }};
+void pidee_dip_8_interupt()  { if ( pidee_feature_dip_8.interupt_handler  != NULL ) { pidee_feature_dip_8.interupt_handler( pidee_feature_dip_8 ); }};
 
 /* Setup/Read/Write  */
 
