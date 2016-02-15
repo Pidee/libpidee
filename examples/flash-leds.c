@@ -2,7 +2,6 @@
  * Example libpidee app which flashes the pidee LEDS
  */
 
-#include <stdbool.h>
 #include "../src/pidee.h"
 
 // Sequence position
