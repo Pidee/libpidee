@@ -37,18 +37,18 @@ extern "C" {
 /* Feature Type */
 
 typedef enum {
-	PIDEE_FEATURE_DIP,
-	PIDEE_FEATURE_BUTTON,
-	PIDEE_FEATURE_LED
+    PIDEE_FEATURE_DIP,
+    PIDEE_FEATURE_BUTTON,
+    PIDEE_FEATURE_LED
 } pidee_feature_t;
 
 /* Features */
 
 typedef struct pidee_feature {
     char *name;
-	pidee_feature_t feature_type;
-	int bcm_pin;
-	void(*interupt_handler)(pidee_feature);
+    pidee_feature_t feature_type;
+    int bcm_pin;
+    void(*interupt_handler)(pidee_feature);
 } pidee_feature;
 
 
