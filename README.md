@@ -7,4 +7,20 @@ A basic c library for using Pidee inconjuction with [WiringPi](http://wiringpi.c
 * A `pidee_feature_read` and `pidee_feature_write` functions.
 * A `pidee_feature_enable_interupt` function for use with each `pidee_feature`'s `interupt_handler`. The interupt handler will be passed the relevant `pidee_feature` as an argument. This is the purpose of the library. WiringPi interupt functions are not passed any context.
 
+## Test examples
+
+Three apps are included as examples:
+
+* __flash-leds__
+* __print-dip__
+* __print-dip-table__
+* __watch-button__
+* __watch-dip__
+
+### Building test apps
+
+    cd test-apps/
+    make
+
+
 
