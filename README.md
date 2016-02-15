@@ -1,4 +1,4 @@
-# libPidee
+# libpidee
 
 A basic c library for using Pidee inconjuction with [WiringPi](http://wiringpi.com):
 
