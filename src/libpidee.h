@@ -81,12 +81,8 @@ void pidee_dip_8_interupt()  { if ( pidee_feature_dip_8.interupt_handler  != NUL
 /* Setup/Read/Write  */
 
 void pidee_system_command( const char *head, int pin, const char *tail ) {
-    char pin_str[2];
-    sprintf( pin_str, "%d", pin );
-    char str[50] = "";
-    strcat( str, head );
-    strcat( str, pin_str );
-    strcat( str, tail );
+    char str[100];
+    sprintf( str, "%s %d %s", head, pin, tail );
     system( str );
 }
 

@@ -45,8 +45,6 @@ uint8_t read_dip_value() {
 
 int main() {
 
-    wiringPiSetupSys(); // Needs to be called 
-
     pidee_feature_setup( &pidee_feature_dip_1 );
     pidee_feature_setup( &pidee_feature_dip_2 );
     pidee_feature_setup( &pidee_feature_dip_3 );
@@ -55,6 +53,8 @@ int main() {
     pidee_feature_setup( &pidee_feature_dip_6 );
     pidee_feature_setup( &pidee_feature_dip_7 );
     pidee_feature_setup( &pidee_feature_dip_8 );
+
+    wiringPiSetupSys(); // Needs to be called after pidee_feature_setup
 
     pidee_feature_enable_interupt( &pidee_feature_dip_1 );
     pidee_feature_enable_interupt( &pidee_feature_dip_2 );

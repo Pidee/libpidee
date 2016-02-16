@@ -9,11 +9,11 @@ int frame = 0;
 
 int main() {
 
-    wiringPiSetupSys(); // Needs to be called 
-
     pidee_feature_setup( &pidee_feature_led_red );
     pidee_feature_setup( &pidee_feature_led_green );
     pidee_feature_setup( &pidee_feature_led_yellow );
+
+    wiringPiSetupSys(); // Needs to be called after pidee_feature_setup
 
     for (;;)
     {
