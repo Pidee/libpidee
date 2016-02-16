@@ -14,7 +14,7 @@ bool hasChanged = false;
 int lastValue = -1;
 
 void my_interupt( pidee_feature feature ) {
-    // printf( "%s\n", feature.name );
+    printf( "%s\n", feature.name );
     pthread_mutex_lock(&my_interupt_lock);
     hasChanged = true;
     pthread_mutex_unlock(&my_interupt_lock);
