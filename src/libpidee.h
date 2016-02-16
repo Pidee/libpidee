@@ -45,7 +45,7 @@ typedef enum {
 /* Features */
 
 typedef struct pidee_feature {
-    char *name;
+    const char *name;
     pidee_feature_t feature_type;
     int bcm_pin;
     void(*interupt_handler)(pidee_feature);
@@ -80,7 +80,7 @@ void pidee_dip_8_interupt()  { if ( pidee_feature_dip_8.interupt_handler  != NUL
 
 /* Setup/Read/Write  */
 
-void pidee_system_command( char *head, int pin, char *tail ) {
+void pidee_system_command( const char *head, int pin, const char *tail ) {
     char pin_str[2];
     sprintf( pin_str, "%d", pin );
     char str[50] = "";
