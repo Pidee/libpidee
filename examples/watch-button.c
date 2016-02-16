@@ -13,9 +13,10 @@ void my_interupt( pidee_feature feature ) {
 int main() {
 
     pidee_feature_setup( &pidee_feature_button );
-    pidee_feature_enable_interupt( &pidee_feature_button );
     
     wiringPiSetupSys(); // Needs to be called after pidee_feature_setup
+    
+    pidee_feature_enable_interupt( &pidee_feature_button );
 
     pidee_feature_button.interupt_handler = &my_interupt;
 
