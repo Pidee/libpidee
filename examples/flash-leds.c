@@ -2,7 +2,7 @@
  * Example libpidee app which flashes the pidee LEDS
  */
 
-#include "../src/pidee.h"
+#include "../src/libpidee.h"
 
 // Sequence position
 int frame = 0;

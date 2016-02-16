@@ -14,8 +14,8 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#ifndef _PIDEE_H
-#define _PIDEE_H
+#ifndef _LIB_PIDEE_H
+#define _LIB_PIDEE_H
 
 #ifdef __cplusplus
 extern "C" {
@@ -32,7 +32,7 @@ extern "C" {
 #include <wiringPi.h>
 
 /* Version */
-#define PIDEE_VERSION 0.0.1
+#define LIB_PIDEE_VERSION "0.0.1"
 
 /* Feature Type */
 

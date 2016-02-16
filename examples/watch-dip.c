@@ -6,7 +6,7 @@
 #include <stdbool.h>
 #include <pthread.h>
 
-#include "../src/pidee.h"
+#include "../src/libpidee.h"
 
 // See: https://projects.drogon.net/raspberry-pi/wiringpi/functions/#comment-3087
 pthread_mutex_t my_interupt_lock;

@@ -2,7 +2,7 @@
  * Example libpidee app which print the dip value
  */
  
-#include "../src/pidee.h"
+#include "../src/libpidee.h"
 
 int main() {
 

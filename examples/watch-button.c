@@ -3,7 +3,7 @@
  */
 
 #include <unistd.h>
-#include "../src/pidee.h"
+#include "../src/libpidee.h"
 
 void my_interupt( pidee_feature feature ) {
     int value = pidee_feature_read( &pidee_feature_button );
