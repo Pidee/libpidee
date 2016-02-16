@@ -88,13 +88,11 @@ int main() {
         }
         pthread_mutex_unlock(&my_interupt_lock);
         if ( shouldPrint ) {
-            // Avoid bouncing
             uint8_t value = read_dip_value();
             if ( value != lastValue ) {
                 printf("%d\n", read_dip_value() );
                 lastValue = value;
             }
-            
         }
         usleep(100);
     }
