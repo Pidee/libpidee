@@ -26,18 +26,18 @@ int main() {
     int dip_7_value = pidee_feature_read( &pidee_feature_dip_7 );
     int dip_8_value = pidee_feature_read( &pidee_feature_dip_8 );
 
-    printf( "|-----|-------|\n" );
-    printf( "| Switch | Value |\n" );
-    printf( "|-----|-------|\n" );
-    printf( "|  %d  |   %d   | \n", 1, dip_1_value );
-    printf( "|  %d  |   %d   | \n", 2, dip_2_value );
-    printf( "|  %d  |   %d   | \n", 3, dip_3_value );
-    printf( "|  %d  |   %d   | \n", 4, dip_4_value );
-    printf( "|  %d  |   %d   | \n", 5, dip_5_value );
-    printf( "|  %d  |   %d   | \n", 6, dip_6_value );
-    printf( "|  %d  |   %d   | \n", 7, dip_7_value );
-    printf( "|  %d  |   %d   | \n", 8, dip_8_value );
-    printf( "|-----|-------|\n" );
+    printf( "┌────────┬────────┐\n" );
+    printf( "│ Switch │  Value │\n" );
+    printf( "├────────┼────────┤\n" );
+    printf( "│    %d   │    %d   │\n", 1, dip_1_value );
+    printf( "│    %d   │    %d   │\n", 2, dip_2_value );
+    printf( "│    %d   │    %d   │\n", 3, dip_3_value );
+    printf( "│    %d   │    %d   │\n", 4, dip_4_value );
+    printf( "│    %d   │    %d   │\n", 5, dip_5_value );
+    printf( "│    %d   │    %d   │\n", 6, dip_6_value );
+    printf( "│    %d   │    %d   │\n", 7, dip_7_value );
+    printf( "│    %d   │    %d   │\n", 8, dip_8_value );
+    printf( "└────────┴────────┘\n" );
 
     return 0;
 }
