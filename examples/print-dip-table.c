@@ -27,7 +27,7 @@ int main() {
     int dip_8_value = pidee_feature_read( &pidee_feature_dip_8 );
 
     printf( "|-----|-------|\n" );
-    printf( "| DIP | Value |\n" );
+    printf( "| Switch | Value |\n" );
     printf( "|-----|-------|\n" );
     printf( "|  %d  |   %d   | \n", 1, dip_1_value );
     printf( "|  %d  |   %d   | \n", 2, dip_2_value );
