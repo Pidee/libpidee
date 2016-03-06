@@ -17,7 +17,7 @@ A basic c library for using Pidee in conjuction with [WiringPi](http://wiringpi.
 
 ### Building test apps
 
-    cd test-apps/
+    cd examples/
     make
 
 
