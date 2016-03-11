@@ -35,7 +35,7 @@ Run a test application:
     cd examples/bin/
     ./flash-leds
     
-Rebuild all the example:
+Rebuild all examples:
 
     make clean
     make -j4
