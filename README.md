@@ -1,3 +1,4 @@
+
 # libpidee
 
 A basic c library for using Pidee in conjuction with [WiringPi](http://wiringpi.com):
@@ -20,17 +21,21 @@ A basic c library for using Pidee in conjuction with [WiringPi](http://wiringpi.
 Clone the repo:
 
     git clone https://github.com/Pidee/libpidee.git
+    cd pidee
 
+Build test applications:
 
-Building test applications
-    
-    cd libpidee
     cd examples/
-    make
+    make -j4
 
-Running a test application
+*Note add `-j4` on the Raspberry 2 and 3 only.*
+
+Run a test application:
 
     cd examples/bin/
     ./flash-leds
     
+Rebuild all the example:
 
+    make clean
+    make -j4
