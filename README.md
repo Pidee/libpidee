@@ -15,8 +15,16 @@ A basic c library for using Pidee in conjuction with [WiringPi](http://wiringpi.
 * __watch-button__
 * __watch-dip__
 
-### Building test apps
+## Getting Started
 
+Clone the repo:
+
+    git clone https://github.com/Pidee/libpidee.git
+
+
+Building test app
+    
+    cd libpidee
     cd examples/
     make
 
