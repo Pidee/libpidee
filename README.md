@@ -22,11 +22,15 @@ Clone the repo:
     git clone https://github.com/Pidee/libpidee.git
 
 
-Building test app
+Building test applications
     
     cd libpidee
     cd examples/
     make
 
+Running a test application
 
+    cd examples/bin/
+    ./flash-leds
+    
 
