@@ -15,9 +15,9 @@ int lastValue = -1;
 
 void my_interupt( pidee_feature feature ) {
     // printf( "%s\n", feature.name );
-    pthread_mutex_lock(&my_interupt_lock);
+    pthread_mutex_lock( &my_interupt_lock );
     hasChanged = true;
-    pthread_mutex_unlock(&my_interupt_lock);
+    pthread_mutex_unlock( &my_interupt_lock );
 }
 
 uint8_t read_dip_value() {
@@ -79,25 +79,26 @@ int main() {
         return 1;
     }
 
-    for (;;) {
+    for ( ;; ) {
         bool shouldPrint = false;
-        pthread_mutex_lock(&my_interupt_lock);
+        pthread_mutex_lock( &my_interupt_lock );
         if ( hasChanged ) {
             shouldPrint = true;
             hasChanged = false;
         }
-        pthread_mutex_unlock(&my_interupt_lock);
+        pthread_mutex_unlock( &my_interupt_lock );
         if ( shouldPrint ) {
             uint8_t value = read_dip_value();
             if ( value != lastValue ) {
-                printf("%d\n", read_dip_value() );
+                printf( "%d\n", read_dip_value() );
+                fflush( stdout );
                 lastValue = value;
             }
         }
-        usleep(100);
+        usleep( 100 );
     }
 
-    pthread_mutex_destroy(&my_interupt_lock);
+    pthread_mutex_destroy( &my_interupt_lock );
 
     return 0;
 }

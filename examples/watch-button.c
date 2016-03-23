@@ -7,7 +7,8 @@
 
 void my_interupt( pidee_feature feature ) {
     int value = pidee_feature_read( &pidee_feature_button );
-    printf("%s\n", value ? "button pressed" : "button released" );
+    printf( "%s\n", value ? "button pressed" : "button released" );
+    fflush(stdout);
 }
 
 int main() {
@@ -20,8 +21,8 @@ int main() {
 
     pidee_feature_button.interupt_handler = &my_interupt;
 
-    for (;;) {
-        sleep(1000);
+    for ( ;; ) {
+        sleep( 1000 );
     }
 
     return 0;

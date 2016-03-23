@@ -28,15 +28,15 @@ int main() {
 
     uint8_t value = 0;
     value = dip_value_1 | 
-            (dip_value_2<<1) | 
-            (dip_value_3<<2) | 
-            (dip_value_4<<3) | 
-            (dip_value_5<<4) | 
-            (dip_value_6<<5) | 
-            (dip_value_7<<6) | 
-            (dip_value_8<<7);
+            ( dip_value_2<<1 ) | 
+            ( dip_value_3<<2 ) | 
+            ( dip_value_4<<3 ) | 
+            ( dip_value_5<<4 ) | 
+            ( dip_value_6<<5 ) | 
+            ( dip_value_7<<6 ) | 
+            ( dip_value_8<<7 );
 
-    printf("%d\n", value);
+    printf( "%d\n", value );
 
     return 0;
 }

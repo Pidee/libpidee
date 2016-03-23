@@ -45,7 +45,7 @@ typedef struct pidee_feature {
     const char *name;
     pidee_feature_t feature_type;
     int bcm_pin;
-    void(*interupt_handler)(pidee_feature);
+    void( *interupt_handler )( pidee_feature );
 } pidee_feature;
 
 
@@ -78,7 +78,7 @@ void pidee_dip_8_interupt()  { if ( pidee_feature_dip_8.interupt_handler  != NUL
 /* Setup/Read/Write  */
 
 void pidee_system_command( const char *head, int pin, const char *tail ) {
-    char str[100];
+    char str[ 100 ];
     sprintf( str, "%s %d %s", head, pin, tail );
     system( str );
 }
